@@ -1,0 +1,141 @@
+#logo {
+	vertical-align: middle;
+	width: 70%;
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+    margin-top: 250px;
+    margin-bottom: 250px;
+}
+
+/*@font-face
+{
+font-family: Sofia Pro;
+src: url('sofiapro-light.otf')
+}*/
+
+#nav {
+	margin: 30px;
+
+
+/*	position: fixed;
+*/}
+
+body {
+	margin:0;
+}
+
+p {
+	font-size: 21px;
+	font-weight: 100;
+	letter-spacing: 1.3px;
+	color: White;
+	font-family: Nunito;
+}
+
+a {
+	font-family: Comfortaa;
+	color: Black;
+	font-size: 13px;
+	letter-spacing: 1.5;
+	font-style: normal;
+	text-decoration: none;
+	width: 100%;
+	z-index: 1;
+	font-family: Comfortaa;
+	letter-spacing: 1px;
+}
+
+
+#navbutton {
+	padding: 7px;
+	margin-right: 47px;
+	width: 60px;
+	background: white;
+	border-color: white;
+	transition: width 2s;
+	border-radius: 25px;
+}
+
+h1 {
+	font-weight: 10;
+	color: White;
+	letter-spacing: 1.5px;
+	font-weight: 600;
+	font-family: Nunito;
+}
+
+
+h2 {
+	font-weight: 10;
+	color: Black;
+	text-align: center;
+	letter-spacing: 1.5px;
+	font-weight: 600;
+	font-family: Nunito;
+}
+
+#test1 {
+	width: 100%;
+	border-spacing:0; /* Removes the cell spacing via CSS */
+  	border-collapse: collapse;
+	background-color: rgb(255, 80, 80);
+	padding: 30;
+}
+
+#test2 {
+    width: 100%;
+	border-spacing:0; /* Removes the cell spacing via CSS */
+  	border-collapse: collapse;
+	background-color: rgb(102, 102, 255);
+	/*rgb(128, 128, 255);*/
+	padding: 30;
+}
+
+#test3 {
+    width: 100%;
+	border-spacing:0; /* Removes the cell spacing via CSS */
+  	border-collapse: collapse;
+	background-color: rgb(255, 128, 0);
+	padding: 30;
+}
+
+#featureinfo {
+	padding: 30px;
+	width: 100%;
+}
+
+#featureimg {
+	width: 100%;
+	z-index: 1;
+	margin-left: -1px;
+	margin-top: -1px;
+}
+
+#bag {
+float: right;
+margin-right: 70px;
+width: 2%;
+}
+
+#navbutton:hover {
+  font-weight: 600;
+  width: 110px;
+  background-color: rgb(172,241,162);
+  border-radius: 25px;
+  border-width: 3px;
+  border-color: rgb(172,241,162);;
+}
+
+#pressedbutton {
+	font-weight: 600;
+	width: 110px;
+	background-color: white
+	border-radius: 25px;
+	padding: 7px;
+	margin-right: 40px;
+	border-width: 3px;
+	border-color: rgb(172,241,162);
+	border-radius: 25px;
+}
+
