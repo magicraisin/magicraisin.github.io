@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html lang-"en">
+
+<head>
+    <link rel="stylesheet" href="stylesuav.css">
+    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <script src="suavocado.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="cesta-feira.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jStorage/0.4.12/jstorage.min.js"></script>
+    <script src="simpleCart.js"></script>
+
+
+    <title>Suavocado</title>
+<!--     <meta http-equiv="refresh" content="1" >
+ --></head>
+<body>
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+<script>
+    window.sr = ScrollReveal({ origin: 'top' });
+    sr.reveal('.test1');
+    sr.reveal('.test2');
+    sr.reveal('.test3');
+</script>
+
+
+ <script src="https://form.jotform.com/cardforms/feedbackEmbedButton.min.js"></script> <script> new JF_FeedbackEmbedButton({ buttonText: "Buy Stickers", buttonFontColor: "#FFFFFF", buttonBackgroundColor: "#6ab95e", buttonSide: "Top", buttonAlign: "Right", buttonIcon: "default", formId: 80631862284156 }); </script> 
+
+    <div class="nav" id="nav">
+        <button id="pressedbutton"><a href="index.html">HOME</a></button>
+        <button id="navbutton"><a href="about.html">ABOUT</a></button>
+        <button id="navbutton"><a href="submit.html">SUBMIT</a></button>
+        <img id="bag" src="bag.png">
+    </div>
+
+    <div id="header">
+        <img id="logo" src="suavlogo.gif"alt=Suavocado>
+    </div>
+
+    <div id=test1>
+        <table>
+            <tc>
+            <td width=75%>
+                <img id="featureimg" src="sal2.jpg"alt=Salobae>
+            </td>
+            </tc>
+            <tc>
+            <td id="featureinfo" width=25%>
+                <h1>Salobae</h1>
+                <p>Your favorite university president reveals his sensitive side.</p>
+                <form>
+                 <input type="number" id="quantity" name="Quantity" value="Quantity">
+                    <select name="Size" size="3" multiple>
+                        <option value="Mini (1 in)"'>Mini</option>
+                        <option value="Medium (3 in)">Medium</option>
+                        <option value="Jumbo (5 in)">Jumbo</option>
+                    </select>
+                    <button>Add to Cart</button>
+
+                </form>
+
+            </td>
+            </tc>
+        </table>
+    </div>
+
+
+
+      <div id="test2">
+        <table>
+            <tc>
+            <td width=25% style="padding:30px;">
+                <h1>Tenders</h1>
+                <p>If it isn't Chicken Tenders Day, is it worth waking up?</p>
+            </td>
+            </tc>
+
+         <tc>
+            <td  width=75%>
+                <img id="featureimg" src="tenders.jpg"alt=Flake>
+               
+            </td>
+            </tc>
+        </table>
+    </div>
+
+
+
+   <div id="test3">
+        <table>
+            <tc>
+            <td width=75%>
+                <img id="featureimg" src="flake.jpg"alt=Flake>
+            </td>
+            </tc>
+            <tc>
+            <td id="featureinfo" width=25%>
+               <h1>Flakes</h1>
+                <p>Call out the flakes in your life.</p>
+            </td>
+            </tc>
+        </table>
+    </div>
+              
+    
+
+
+
+
+<table>
+    <h2>Browse our newest collection.</h2>
+</table>
+
+
+ <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+  <!-- Identify your business so that you can collect the payments. -->
+  <input type="hidden" name="business" value="kin@kinskards.com">
+
+  <!-- Specify a PayPal Shopping Cart Add to Cart button. -->
+  <input type="hidden" name="cmd" value="_cart">
+  <input type="hidden" name="add" value="1">
+
+  <!-- Specify details about the item that buyers will purchase. -->
+  <input type="hidden" name="item_name"
+        value="Flake Sticker">
+  <input type="hidden" name="amount" value="3.95">
+  <input type="hidden" name="currency_code" value="USD">
+
+  <!-- Provide a drop-down menu option field, without prices. -->
+  <input type="hidden" name="on0" value="Size">
+  <label for="os0">Size</label>
+    <select name="os0" id="os0">
+      <option value="Select a size">Select a size</option>
+      <option value="Small">Small</option>
+      <option value="Medium">Medium</option>
+      <option value="Yellow">Large</option>
+  </select>
+
+  <!-- Display the payment button. -->
+  <input type="image" name="submit"
+    src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"
+    alt="Add to Cart">
+  <img alt="" width="1" height="1"
+    src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
+</form>
+
+
+
+
+
+
+
+ <!--  <form>
+    <h1>Please enter data</h1>
+       <input type="number" id="quantity" name="Quantity" value="Quantity">
+        <input id="size" type=radio value="Mini (1 in)">
+        <input id="size" type=radio value="Medium (3 in)">
+        <input id="size" type=radio value="Jumbo (5 in)">
+    <input id="quantity" type="text" placeholder="Quantity" />
+    <input id="name" type="text" placeholder="Name" />
+    <input type="button" value="Save/Show" onclick="insert()" />
+  </form>
+
+  <div id="display"></div> -->
+ 
+<!-- <script>
+var names   = [];
+
+var sizeInput  = document.getElementById("size");
+var nameInput   = document.getElementById("name");
+var quantityInput = document.getElementById("quantity");
+
+var messageBox  = document.getElementById("display");
+
+function insert ( ) {
+ names.push( sizeInput.value );
+ names.push( nameInput.value );
+ names.push( quantityInput.value );
+  
+ clearAndShow();
+}
+
+function clearAndShow () {
+  // Clear our fields
+  sizeInput.value = "";
+  nameInput.value = "";
+  ticketInput.value = "";
+  
+  // Show our output
+  messageBox.innerHTML = "";
+  messageBox.innerHTML += "Cart: " + names.join(", ") + "<br/>";
+
+}
+</script>
+
+<form>
+    <input type="button" name="Flake" value="Add to Cart"/>
+</form>
+ -->
+
+<!-- 
+
+    <form id="test-form"> 
+  <div>
+    <input type="text" name="First Name" placeholder="First Name"/>
+  </div>
+  <div>
+    <input type="text" name="Last Name" placeholder="Last Name"/>
+  </div>
+  <div>
+    <input type="text" name="Res College" placeholder="Res College"/>
+  </div>
+  <div>
+    <input type="text" name="Suite Number" placeholder="Suite Number"/>
+  </div>
+    <div>
+    <input type="text" name="Venmo Username" placeholder="Venmo Username"/>
+  </div>
+     <div>
+    <input type="text" name="Set Your Price" placeholder="Set Your Price"/>
+  </div>
+  <div>
+    <button type="submit"id="submit-form">Submit</button>
+  </div>
+</form>
+ -->
+</body>
+</html>
