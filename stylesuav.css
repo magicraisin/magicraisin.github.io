@@ -103,20 +103,31 @@ h2 {
 #featureinfo {
 	padding: 30px;
 	width: 100%;
+/*	margin-top: -10px;
+*/
 }
 
 #featureimg {
 	width: 100%;
 	z-index: 1;
-	margin-left: -1px;
-	padding: -1px;
-	margin-top: -1px;
+	padding: -12px;
+	margin-bottom: -7px;
+	margin-left: -3px;
+	margin-top: -4px;
 }
 
+#featureimg2 {
+	width: 100%;
+	z-index: 1;
+	padding: -20px;
+	margin-bottom: -7px;
+	margin-top: -4px;
+	}
+
 #bag {
-float: right;
-margin-right: 70px;
-width: 2%;
+	float: right;
+	margin-right: 70px;
+	width: 2%;
 }
 
 #navbutton:hover {
